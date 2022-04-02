@@ -118,6 +118,10 @@ export default function ShowTodoList() {
                         </div>
                     </div>
                     }
+                    else 
+                    {
+                        return "";
+                    }
                 })
             }
             <div id="show-footer">
