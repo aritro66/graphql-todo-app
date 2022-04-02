@@ -1,0 +1,56 @@
+#add-todo{
+    background-color: transparent;
+    margin: 30px 0 0px 0;
+}
+#add-todo h1{
+    width: 100%;
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+    text-rendering: optimizeLegibility;
+}
+
+#input-holder{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    max-width: 670px;
+}
+
+#toggle-active{
+    position: absolute;
+    left:10px;
+    top:20px;
+}
+
+#new-todo{
+    padding: 16px 16px 16px 60px;
+    border:none;
+    outline: none;
+    background: #fff;
+    box-shadow: 0 0px 8px rgb(0,0,0,0.3);
+    display: block;
+    width: 100%;
+    max-width: 670px;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: 1.4em;
+    color: inherit;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+#new-todo::placeholder{
+    font-style: italic;
+    color: rgb(210, 203, 203);
+}
+
+@media only screen and (max-width:600px) {
+    #input-holder {
+        width: 100%;
+    }
+    
+}
+
+
