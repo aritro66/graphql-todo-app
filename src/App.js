@@ -15,6 +15,7 @@ function App() {
       <div className="App">
         <AddTodo />
         <ShowTodoList />
+        <p id="dc">Double-click to edit a todo</p>
       </div>
     </ApolloProvider>
 
