@@ -74,7 +74,7 @@ export default function ShowTodoList() {
                             <div className="mark" style={{display:`${edit&&(editId===ele.id)?"none":"flex"}`}} onClick={() => handleToggle(ele.id, !ele.active)}>
                                 {ele.active ? "" : <AiOutlineCheck size={24} />}
                             </div>
-                            <div className="text" style={{display:`${edit&&(editId===ele.id)?"none":"block"}`}} onDoubleClick={()=>{setEdit(true);setEditData(ele.text);setEditId(ele.id)}}>
+                            <div className="text" style={{display:`${edit&&(editId===ele.id)?"none":"block"}`,textDecoration:`${ele.active?"none":"line-through"}`,opacity:`${ele.active?"1":"0.5"}`}} onDoubleClick={()=>{setEdit(true);setEditData(ele.text);setEditId(ele.id)}}>
                                 {ele.text}
                             </div>
                             <form style={{width:"100%",display:`${edit&&(editId===ele.id)?"block":"none"}`}} onSubmit={(e)=>handleUpdate(e,ele.id)}>
@@ -91,7 +91,7 @@ export default function ShowTodoList() {
                         <div className="mark" style={{display:`${edit&&(editId===ele.id)?"none":"flex"}`}} onClick={() => handleToggle(ele.id, !ele.active)}>
                             {ele.active ? "" : <AiOutlineCheck size={24} />}
                         </div>
-                        <div className="text" style={{display:`${edit&&(editId===ele.id)?"none":"block"}`}} onDoubleClick={()=>{setEdit(true);setEditData(ele.text);setEditId(ele.id)}}>
+                        <div className="text" style={{display:`${edit&&(editId===ele.id)?"none":"block"}`,textDecoration:`${ele.active?"none":"line-through"}`,opacity:`${ele.active?"1":"0.5"}`}} onDoubleClick={()=>{setEdit(true);setEditData(ele.text);setEditId(ele.id)}}>
                             {ele.text}
                         </div>
                         <form style={{width:"100%",display:`${edit&&(editId===ele.id)?"block":"none"}`}} onSubmit={(e)=>handleUpdate(e,ele.id)}>
@@ -107,7 +107,7 @@ export default function ShowTodoList() {
                         <div className="mark" style={{display:`${edit&&(editId===ele.id)?"none":"flex"}`}} onClick={() => handleToggle(ele.id, !ele.active)}>
                             {ele.active ? "" : <AiOutlineCheck size={24} />}
                         </div>
-                        <div className="text" style={{display:`${edit&&(editId===ele.id)?"none":"block"}`}} onDoubleClick={()=>{setEdit(true);setEditData(ele.text);setEditId(ele.id)}}>
+                        <div className="text" style={{display:`${edit&&(editId===ele.id)?"none":"block"}`,textDecoration:`${ele.active?"none":"line-through"}`,opacity:`${ele.active?"1":"0.5"}`}} onDoubleClick={()=>{setEdit(true);setEditData(ele.text);setEditId(ele.id)}}>
                             {ele.text}
                         </div>
                         <form style={{width:"100%",display:`${edit&&(editId===ele.id)?"block":"none"}`}} onSubmit={(e)=>handleUpdate(e,ele.id)}>
